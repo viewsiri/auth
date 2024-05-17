@@ -1,3 +1,4 @@
+<% if@current_user%>
 <h1><%= @company["name"] %></h1>
 
 <h2><%= @company["city"] %>, <%= @company["state"] %></h2>
@@ -26,3 +27,5 @@
   <input type="hidden" name="_method" value="delete">
   <button>Delete Company</button>
 </form>
+
+<% end %>
